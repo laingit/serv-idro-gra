@@ -6,9 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# PyCharm Editor
+.idea
+
 # Distribution / packaging
 .Python
-env/
+venv/
 build/
 develop-eggs/
 dist/
