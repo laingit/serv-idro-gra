@@ -6,7 +6,7 @@ imageDirectory = r"E:\_pytest\88_Putifigari\2014"
 outPutDir = os.path.join(imageDirectory, "verifiche")
 
 try:
-    shutil.rmtree(outPutDir, ignore_errors=True)
+    shutil.rmtree(outPutDir, ignore_errors=True)  # DANGER !!!!!! - MAKE SURE YOU WANT TO DELETE oupPutDir
 except FileNotFoundError:
     print("File {0} assente".format(outPutDir))
 
