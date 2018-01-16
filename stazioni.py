@@ -16,6 +16,10 @@ def read_file():
 
 def trasforma_da_lista_static_tuple(lista):
     codice, nome = tuple(lista)
+    try:
+        int(codice)
+    except ValueError:
+        print(codice)
     return (codice,
             nome.strip(),
             )
