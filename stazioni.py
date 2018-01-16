@@ -45,4 +45,4 @@ def mkdir_stazioni_e_2014():
 
 
 print_stazioni()
-mkdir_stazioni_e_2014()
+# mkdir_stazioni_e_2014()
