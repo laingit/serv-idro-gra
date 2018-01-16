@@ -12,7 +12,7 @@ except FileNotFoundError:
 
 os.mkdir(outPutDir)  # crea ex nuovo
 
-estraiBox = (0, 0, 1000, 240)  # taglia
+estraiBox = (0, 0, 1000, 240)   # taglia
 newImageSize = (500, 120)       # resample
 
 for root, dirs, files in os.walk(imageDirectory, topdown=False):
@@ -23,7 +23,7 @@ for root, dirs, files in os.walk(imageDirectory, topdown=False):
         try:
             stazione, nomeStazione, annoStazione, progressivoStazione = onlyName.split("_")
             if int(progressivoStazione) % 2 == 1:
-                newFileName = "_".join([stazione, nomeStazione, annoStazione, progressivoStazione, "sintesi.jpg"])
+                newFileName = "_".join(["1290", nomeStazione, annoStazione, progressivoStazione, "sintesi.jpg"])
                 newFileNameWithPath = os.path.join(root, outPutDir, newFileName)
 
                 im = Image.open(fileName)
